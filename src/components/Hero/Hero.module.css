@@ -45,17 +45,25 @@ body { background: #ffffff; }
 }
 
 /* CTA */
-.contactBtn{
+/* ——— CTA button ——— */
+.contactBtn {
   text-decoration: none;
-  font: 600 30px/1 var(--font-roboto);
-  color: #fff;
-  background: var(--color-primary);
+  background-color: var(--color-primary);
+  color: #ffffff;
+
+  /* rounded, but not a full pill */
+  border-radius: 12px;
+
+  font-size: 30px;
+  font-weight: 600;
   padding: 17px 38px;
-  box-shadow: 0 2px 6px rgba(16,42,67,.14);
-  transition: background .2s, transform .15s;
+  box-shadow: 0 2px 6px rgba(16, 42, 67, 0.14);
+  transition: background 0.2s, transform 0.15s;
 }
-.contactBtn:hover  { background:#ff73a3; transform:translateY(-2px); }
-.contactBtn:active { transform:none; }
+
+.contactBtn:hover  { background: #ff73a3; transform: translateY(-2px); }
+.contactBtn:active { transform: translateY(0); }
+
 
 /* avatar */
 .heroImg{

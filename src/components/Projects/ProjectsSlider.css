@@ -1,0 +1,32 @@
+/* ProjectsSlider.css  – arrows fully visible inside viewport */
+
+@import "../../vars.css";
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: var(--color-primary);   
+  width: 32px;
+  height: 32px;
+  top: 50%;
+  margin-top: -16px;            
+  z-index: 2;                    
+  transition: opacity 0.2s;
+}
+
+.swiper-button-prev { left: 8px;  transform: none; }
+.swiper-button-next { right: 8px; transform: none; }
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  opacity: 0.75;
+}
+
+.swiper-pagination-bullet {
+  background: var(--color-primary);
+  opacity: 0.35;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+}
+

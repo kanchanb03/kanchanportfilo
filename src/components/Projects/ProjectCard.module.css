@@ -1,26 +1,85 @@
 @import "../../vars.css";
 
-.container{
-  max-width:345px;padding:18px 24px;border-radius:10px;
-  background:linear-gradient(180deg,var(--color-surface)0%,var(--color-bg)100%);
-  box-shadow:0 16px 14px rgba(16,42,67,.08);
-  display:flex;flex-direction:column;
-}
-.image{margin-bottom:25px;font-weight:700;}
-.description{margin-top:6px;font:400 25px/1.4 var(--font-roboto);color:var(--color-subtext);}
+/* ——— Card shell ——— */
+.container {
+  /* unified footprint */
+  width: 345px;          /* keep your original width */
+  min-height: 570px;     /* <— set one height for all cards */
+  max-height: 440px;
 
-/* skill pills */
-.skills{width:100%;display:flex;flex-wrap:wrap;gap:6px;margin-top:14px;list-style:none;}
-.skill{
-  font:400 25px/1 var(--font-roboto);padding:2px 22px;border-radius:100px;
-  background:var(--color-primary-light);color:var(--color-primary);
+  padding: 18px 24px;
+  border-radius: 10px;
+
+  background: linear-gradient(
+    180deg,
+    var(--color-surface) 0%,
+    var(--color-bg) 100%
+  );
+  box-shadow: 0 16px 14px rgba(16, 42, 67, 0.08);
+
+  /* equal-height magic */
+  display: flex;
+  flex-direction: column;
 }
 
-/* links */
-.links{width:100%;margin-top:26px;display:flex;justify-content:space-around;}
-.link{
-  text-decoration:none;font:600 30px/1 var(--font-roboto);color:#fff;
-  background:var(--color-primary);padding:1px 22px;border-radius:100px;
-  transition:background .2s;
+/* ——— Top image / banner ——— */
+.image {
+  margin-bottom: 25px;
+  font-weight: 700;
 }
-.link:hover{background:#ff73a3;}
+
+/* ——— Description ——— */
+.description {
+  margin-top: 6px;
+  font: 400 25px/1.4 var(--font-roboto);
+  color: var(--color-subtext);
+
+  /* allow text to wrap but stay inside fixed height */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;    /* adjust lines as needed */
+  -webkit-box-orient: vertical;
+}
+
+/* ——— Skill pills ——— */
+.skills {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 14px;
+  list-style: none;
+}
+
+.skill {
+  font: 400 25px/1 var(--font-roboto);
+  border-radius: 100px;
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+  padding: 2px 22px;
+}
+
+/* ——— Link buttons row ——— */
+.links {
+  /* push this row to the bottom of the card */
+  margin-top: auto;
+
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.link {
+  text-decoration: none;
+  font: 600 30px/1 var(--font-roboto);
+  color: #ffffff;
+  border-radius: 100px;
+  background: var(--color-primary);
+  padding: 1px 22px;
+  transition: background 0.2s;
+}
+
+.link:hover {
+  background: #ff73a3;
+}

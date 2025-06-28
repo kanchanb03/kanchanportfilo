@@ -5,23 +5,32 @@
       "description": "This is a portfolio that showcases my work.",
       "skills": ["React", "CSS"],
       "demo": "https://kanchanbandesha.netlify.app",
-      "source": "https://www.github.com"
+      "source": "https://github.com/kanchanb03/kanchanportfilo"
     },
     {
-      "title": "Project B",
-      "imageSrc": "projects/project.png",
-      "description": "This is a project made to learn the latest languages by building an app.",
-      "skills": ["React", "Express", "Node", "Sass"],
+      "title": "Flashflicks",
+      "imageSrc": "projects/flashflicks.png",
+      "description": "This a studying website for a anyone who wants to master new facts.",
+      "skills": ["Python", "Django", "Docker"],
       "demo": "https://www.example.com",
-      "source": "https://www.github.com"
+      "source": "https://github.com/kanchanb03/FlashFlicks"
     },
     {
-      "title": "Project C",
-      "imageSrc": "projects/project.png",
-      "description": "This is a project made to learn the latest languages by building an app.",
-      "skills": ["React", "Express", "Node"],
+      "title": "Taskflow",
+      "imageSrc": "projects/Taskflow.png",
+      "description": "Taskflow is a task lists app with your calendar and reminders.",
+      "skills": ["Swift", "UIKit", "EventKit", "UserNotifications"],
+      "demo": "https://www.example.com",
+      "source": "https://github.com/kanchanb03/TaskFlow"
+    },
+    {
+      "title": "Taskflow",
+      "imageSrc": "projects/Taskflow.png",
+      "description": "Taskflow is a task lists app with your calendar and reminders.",
+      "skills": ["Swift", "UIKit", "EventKit", "UserNotifications"],
       "demo": "https://www.example.com",
       "source": "https://www.github.com"
     }
+    
   ]
   
