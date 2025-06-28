@@ -1,0 +1,30 @@
+/* Rose-Quartz & Midnight-Navy design tokens */
+:root {
+  /* brand */
+  --color-primary:        #ff5c8d;   /* accent pink */
+  --color-primary-light:  #ffe4ec;   /* soft tint */
+
+  /* neutrals */
+  --color-bg: #ffffff;   
+  --color-surface:        #ffffff17;   /* cards / panels */
+  --color-text: #0e1f34;     
+  --color-subtext:        #486581;   /* slate */
+
+  /* typography */
+  --font-roboto: "Roboto", sans-serif;
+
+  /* hero glow (used via ::before) */
+  
+}
+
+/* Dark-mode swap */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg:            #0d1117;
+    --color-surface:       #161b22;
+    --color-text:          #f0f4f8;
+    --color-subtext:       #9fb3c8;
+    --color-primary:       #ff73a3;
+    --color-primary-light: #34131c;
+  }
+}

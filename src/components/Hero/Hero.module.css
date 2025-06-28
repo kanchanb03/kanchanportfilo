@@ -1,0 +1,80 @@
+@import "../../vars.css";
+
+/* page bg → white so radial glow blends */
+body { background: #ffffff; }
+
+/* ——  wrapper  —— */
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 96px auto 72px;
+  padding: 0 5%;
+  max-width: 1200px;
+  z-index: 1;
+}
+
+/* radial blush behind hero */
+.container::before {
+  content: "";
+  position: absolute;
+  inset: -25% -15%;
+  background: var(--gradient-hero);
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* ——  text  —— */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 55%;
+  color: var(--color-text);
+}
+.title {
+  font: 900 72px/1 var(--font-roboto);
+  color: var(--color-primary);
+  margin-bottom: 33px;
+}
+.description {
+  font: 400 30px/1.45 var(--font-roboto);
+  color: var(--color-subtext);
+  margin-bottom: 52px;
+}
+
+/* CTA */
+.contactBtn{
+  text-decoration: none;
+  font: 600 30px/1 var(--font-roboto);
+  color: #fff;
+  background: var(--color-primary);
+  padding: 17px 38px;
+  box-shadow: 0 2px 6px rgba(16,42,67,.14);
+  transition: background .2s, transform .15s;
+}
+.contactBtn:hover  { background:#ff73a3; transform:translateY(-2px); }
+.contactBtn:active { transform:none; }
+
+/* avatar */
+.heroImg{
+  width: 38%;
+  min-width: 240px;
+  border: 6px solid #fff;
+  border-radius: 50%;
+  animation: floating 3s ease-in-out infinite;
+}
+@keyframes floating{
+  0%,100%{transform:translateY(0);}
+  50%   {transform:translateY(10px);}
+}
+
+/* ——  mobile  —— */
+@media (max-width:830px){
+  .container{flex-direction:column-reverse;padding:48px 8%;margin:48px 5%;text-align:center;}
+  .content{align-items:center;max-width:100%;}
+  .title{font-size:56px;margin-bottom:24px;}
+  .description{font-size:26px;margin-bottom:40px;}
+  .heroImg{width:60%;margin-bottom:32px;}
+}

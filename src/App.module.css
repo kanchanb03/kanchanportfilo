@@ -1,0 +1,15 @@
+@import "./vars.css";
+
+/* subtle site-wide blush wash */
+body::before {
+  content: "";
+  position: fixed;               /* stays put on scroll */
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: radial-gradient(
+    110% 110% at 15% 35%,
+    rgba(255, 92, 141, 0.18) 0%,   /* 18 % → whisper-light */
+    rgba(255, 92, 141, 0) 60%
+  );
+}
