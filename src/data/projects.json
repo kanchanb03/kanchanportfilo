@@ -24,12 +24,12 @@
       "source": "https://github.com/kanchanb03/TaskFlow"
     },
     {
-      "title": "Taskflow",
-      "imageSrc": "projects/Taskflow.png",
-      "description": "Taskflow is a task lists app with your calendar and reminders.",
-      "skills": ["Swift", "UIKit", "EventKit", "UserNotifications"],
+      "title": "Pulse 95 radio website",
+      "imageSrc": "projects/pulse95.png",
+      "description": "Website for a radio station in UAE",
+      "skills": ["Figma", "Wordpress", "PHP", "MYSQL"],
       "demo": "https://www.example.com",
-      "source": "https://www.github.com"
+      "source": "https://www.pulse95radio.net"
     }
     
   ]
